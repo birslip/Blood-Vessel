@@ -11,5 +11,5 @@ For this game I am using cocos2d-x and xcode. The interesting part is the way I 
 Credits
 ============
 
-Art & Sound : Misbug
-Programming : birslip
+*Art & Sound : Misbug
+*Programming : birslip
