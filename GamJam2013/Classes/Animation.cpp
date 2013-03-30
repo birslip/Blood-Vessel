@@ -1,8 +1,8 @@
 //
 //  Animation.cpp
-//  touchandpop
+//  GameJam2013
 //
-//  Created by Arthur GUIBERT on 08/10/12.
+//  Created by Arthur GUIBERT on 25/01/13.
 //
 //
 
