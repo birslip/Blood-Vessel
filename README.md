@@ -1,7 +1,7 @@
 Blood-Vessel
 ============
 
-A small rythm game created during the Global Game Jam 2013 in London.
+A small rythm game created during the Global Game Jam 2013 in London. This game has been made in less than 48 hours, and almost nothing (code-wise and art-wise) has been touched since. So this project is provided as it is and could of course contain bugs or inconstitencies.
 
 Technologies
 ============
