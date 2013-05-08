@@ -14,6 +14,8 @@ EndScreen::EndScreen(int score)
 {
     CCLayer::init();
     
+    printf("score = %d\n",score);
+    
     sprite = CCSprite::createWithSpriteFrameName("gui_retry_OVER.png");
     sprite->setAnchorPoint(ccp(0,0));
     addChild(sprite);
@@ -38,7 +40,6 @@ EndScreen::~EndScreen()
 
 void EndScreen::update(float dt)
 {
-    
     if(retryCount == 30)
     {
         game()->menu();
@@ -50,8 +51,6 @@ void EndScreen::update(float dt)
     
     if(retryCount >= 0)
     {
-        
-        
         retryCount++;
     }
     else

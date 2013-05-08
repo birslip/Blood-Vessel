@@ -11,9 +11,8 @@
 using namespace cocos2d;
 
 Camera::Camera(float velocity, float damping)
+    : velocity(velocity), damping(damping)
 {
-    this->velocity = velocity;
-    this->damping = damping;
     speed = ccp(0,0);
     position = ccp(0,0);
     target = ccp(0,0);
@@ -53,7 +52,6 @@ void Camera::updatePosition()
 
 void Camera::updateShake()
 {
-    // Screen shake
     speed.x = speed.x * damping - offset.x * velocity;
     offset.x += speed.x;
     

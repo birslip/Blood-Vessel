@@ -17,7 +17,7 @@ struct ColorWithButton {
     int color;
 };
 
-ColorWithButton colorWithButton[] =
+const ColorWithButton colorWithButton[] =
 {
     {1,0,0, RED},
     {0,1,0, YELLOW},
@@ -342,7 +342,6 @@ void Level::update(float dt)
         if(shipExplosionCount == 0)
         {
             SimpleAudioEngine::sharedEngine()->playEffect(CCFileUtils::sharedFileUtils()->fullPathFromRelativePath("Music/fx_ship_explosion.wav"));
-            
         }
         
         if((shipExplosionCount >= 0 && shipExplosionCount <= 2) || (shipExplosionCount >= 8 && shipExplosionCount <= 10) || (shipExplosionCount >= 18 && shipExplosionCount <= 20))
@@ -365,7 +364,7 @@ void Level::update(float dt)
             
             if(shipExplosionCount == explosionAnim->getFrameCount() + 60)
             {
-                game()->ending((float)frameCount / 60.0f);
+                game()->ending(elapsedTime / 10);
                 
                 return;
             }

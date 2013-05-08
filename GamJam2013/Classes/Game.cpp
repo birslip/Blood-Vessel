@@ -48,8 +48,12 @@ bool Game::init()
         scaleFactor = 160.0f / 684.0f;
     }
     
+    if(size.height == 1136) {
+        rt = CCRenderTexture::create(160, 284);
+    } else {
+        rt = CCRenderTexture::create(160, 240);
+    }
     
-    rt = CCRenderTexture::create(160, 240);
     rt->retain();
     sprite = CCSprite::createWithTexture(rt->getSprite()->getTexture());
     

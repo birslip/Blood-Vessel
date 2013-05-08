@@ -17,6 +17,7 @@ Stripes::Stripes(Level* level)
     currentType = -1;
     offset = ccp(0,144);
     length = 0;
+    viewLength = 20000;
     
     color[0] = ccRED;
     color[1] = ccBLUE;
@@ -30,7 +31,6 @@ Stripes::Stripes(Level* level)
     stripeFrame[1] = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("ge_noise_belt_01.png");
     
     noise = new Animation("ge_noise_belt_01:3,ge_noise_belt_02:3,ge_noise_belt_03:3,ge_noise_belt_04:3");
-    
 }
 
 Stripes::~Stripes()
@@ -46,7 +46,6 @@ void Stripes::update(double timeOffset)
     
     for(int i=0;i<list.size();i++)
     {
-        
         float l;
             
         if(i == list.size() - 1)
@@ -69,7 +68,7 @@ void Stripes::update(double timeOffset)
             shipOnStripe = true;
         }
         
-        if(list[i].startTime > t - length && length < t + 20000)
+        if(list[i].startTime > t - length && length < t + viewLength)
         {
             CCSprite* sprite = parent->getStripeSprite();
             
@@ -94,7 +93,7 @@ void Stripes::update(double timeOffset)
             
             sprite->setScaleY((l * ratio - 2)/ 12.0f);
             
-            if(list[i].type < 6)
+            if(list[i].type < NOISE)
             {
                 if(list[i].type == parent->getNewlyPressedColor() && shipOnStripe)
                 {
@@ -122,8 +121,6 @@ void Stripes::update(double timeOffset)
                 sprite->setScale(1);
                 sprite->setColor(ccWHITE);
             }
-            
-            
         }
     }
 }

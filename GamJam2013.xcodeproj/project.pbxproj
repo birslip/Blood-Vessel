@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8E061A3F1707036500A67A61 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E061A3E1707036500A67A61 /* Default-Portrait@2x~ipad.png */; };
+		8E22379A173B030800C5E399 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE6A8D916B45DA300443AC7 /* Default.png */; };
+		8E22379B173B030E00C5E399 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF8D2216B53E2000138431 /* Default@2x.png */; };
+		8E22379D173B03D500C5E399 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E22379C173B03D500C5E399 /* Default-568h@2x.png */; };
 		8E606FD016B37BD500316A25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E606FCF16B37BD500316A25 /* QuartzCore.framework */; };
 		8E606FD216B37BD500316A25 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E606FD116B37BD500316A25 /* OpenGLES.framework */; };
 		8E606FD416B37BD500316A25 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E606FD316B37BD500316A25 /* OpenAL.framework */; };
@@ -217,6 +220,7 @@
 
 /* Begin PBXFileReference section */
 		8E061A3E1707036500A67A61 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		8E22379C173B03D500C5E399 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		8E606FCB16B37BD500316A25 /* GamJam2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamJam2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E606FCF16B37BD500316A25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8E606FD116B37BD500316A25 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -793,6 +797,7 @@
 				8E606FF516B37BD500316A25 /* iTunesArtwork */,
 				8E606FF716B37BD500316A25 /* Info.plist */,
 				8E061A3E1707036500A67A61 /* Default-Portrait@2x~ipad.png */,
+				8E22379C173B03D500C5E399 /* Default-568h@2x.png */,
 				8EEF8D4216B5738400138431 /* Default-Portrait~ipad.png */,
 				8EEF8D4016B5736A00138431 /* icon_144x144.png */,
 				8EEF8D3E16B5735E00138431 /* icon_72x72.png */,
@@ -1669,6 +1674,9 @@
 				8EEF8D4116B5736A00138431 /* icon_144x144.png in Resources */,
 				8EEF8D4316B5738400138431 /* Default-Portrait~ipad.png in Resources */,
 				8E061A3F1707036500A67A61 /* Default-Portrait@2x~ipad.png in Resources */,
+				8E22379A173B030800C5E399 /* Default.png in Resources */,
+				8E22379B173B030E00C5E399 /* Default@2x.png in Resources */,
+				8E22379D173B03D500C5E399 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

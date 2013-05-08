@@ -53,6 +53,7 @@ protected:
     
     int currentType;
     int currentId;
+    int viewLength;
     
     double ratio;
     double length;
