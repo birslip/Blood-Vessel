@@ -10,8 +10,7 @@ For this game I am using cocos2d-x and xcode. The interesting part is the way I 
 
 Screenshots
 ============
-![Blood-Vessel 1](http://slurm.biz/temp/bloodvessel1.png "Blood-Vessel 1") 
-![Blood-Vessel 2](http://slurm.biz/temp/bloodvessel2.png "Blood-Vessel 2") 
+![Blood-Vessel 1](http://slurm.biz/temp/bloodvessel1.png "Blood-Vessel 1") ![Blood-Vessel 2](http://slurm.biz/temp/bloodvessel2.png "Blood-Vessel 2") 
 
 Credits
 ============
