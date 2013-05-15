@@ -33,19 +33,24 @@ bool Game::init()
     CCLayer::init();
     
     // Init system
-   
+    
     scaleFactor = 1;
     
     
     // We render the game in a frame twice as small as the ipad screen and then scale it to fit
     CCSize size = CCDirector::sharedDirector()->getWinSizeInPixels();
-   
+    
     scaleFactor = 160.0f / size.width;
     
     if(size.width == 768)
     {
         // iPad!
         scaleFactor = 160.0f / 684.0f;
+    }
+    else if(size.width == 768 * 2)
+    {
+        // iPad Retina!
+        scaleFactor = 0.5 * 160.0f / 684.0f;
     }
     
     if(size.height == 1136) {
@@ -70,6 +75,12 @@ bool Game::init()
         sprite->setPositionX(768 / 2 - 684 / 2);
         touchOffset = ccp(768 / 2 - 684 / 2, 0) * (-1);
     }
+    else if(size.width == 768 * 2)
+    {
+        // Ipad retina
+        sprite->setPositionX((768 / 2 - 684 / 2) * 2);
+        touchOffset = ccp(768 / 2 - 684 / 2, 0) * (-2);
+    }
     
     sprite->setFlipY(true);
     sprite->retain();
@@ -91,7 +102,7 @@ void Game::update(float dt)
     currentStage->update(dt);
     
     rt->beginWithClear(46.0 / 255.0f, 26.0f / 255.0f, 41.0f / 255.0f, 1);
-        currentStage->visit();
+    currentStage->visit();
     rt->end();
     
     finger.newPress = false;
